@@ -11,12 +11,16 @@ body{
 
 .button-primary{
     border-radius: 5px;
-    background: #FD6E0A;
+    background: #928a84;
     border: 0;
     color: white;
     font-size: 20px;
     font-weight: 700;
     padding: 15px 35px;
+}
+
+.button-primary:hover {
+    color: #33fffc;
 }
 
 .section-title{
@@ -62,7 +66,15 @@ nav li{
 nav a{
     text-decoration: none;
     color: #474747;
+    font-size: 16px;
+    transition: color 0.3s;
 }
+
+nav a:hover {
+    color: #33fffc;
+}
+
+
 
 /* header related styles */
 
@@ -203,7 +215,7 @@ main section{
 footer{
     display: flex;
     gap: 100px;
-    background-color: #FFF8F3;
+    background-color:  #FFF8F3;
     padding: 130px 200px;
     margin-top: 113px;
 }
@@ -227,4 +239,72 @@ textarea{
     background: #FFF;
     border: 0;
     width: 100%;
+}
+
+
+/* For screens smaller than 768px (phones) */
+@media (max-width: 768px) {
+    /* Adjustments for header */
+    .header {
+        padding: 20px;
+    }
+    .nav-title {
+        font-size: 30px;
+    }
+    nav {
+        margin: 0 20px;
+    }
+
+    /* Adjustments for banner */
+    .banner {
+        padding: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .banner-content {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .banner .profile-picture {
+        width: 300px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .banner-title {
+        font-size: 50px;
+    }
+
+    /* Adjustments for sections */
+    main section {
+        margin-top: 50px;
+    }
+    .about {
+        padding: 60px 20px;
+    }
+    .skill-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .resume-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer {
+        padding: 60px 20px;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    .social-links a {
+        margin-right: 15px;
+    }
+}
+
+/* For screens between 768px and 1140px (tablets) */
+@media (min-width: 768px) and (max-width: 1140px) {
+    /* Add specific adjustments here if needed */
 }
